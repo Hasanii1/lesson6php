@@ -1,12 +1,20 @@
 <?php
+$file_name = "ds.txt";
+$my_file = fopen($file_name , "r");
+$size = filesize($file_name);
 
-$my_filename = "ds.text";
-$my_file = fopen($my_filename , "r");
-
-$my_filesize = filesize($my_filename);
-
-$my_filedata = fread($my_filesize , $my_file);
-
-echo ($my_filedata);
+$file_data = fread($my_file , $size);
+echo $file_data;
 
 
+
+
+
+
+
+
+
+
+
+
+?>
